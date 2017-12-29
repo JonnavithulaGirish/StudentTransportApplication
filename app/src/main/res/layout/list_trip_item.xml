@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="10dp"
+        android:background="#f2f2f2"
+        card_view:cardCornerRadius="11dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tripId"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Trip Id:"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tripName"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Trip Name"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <LinearLayout
+            android:weightSum="2"
+            android:paddingTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tripSource"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Source"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tripDestination"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Destination"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:paddingTop="20sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tripDate"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Date"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tripBusNo"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Bus Number"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.me.bussearchstc.BusSearchActivity"
+    android:orientation="vertical"
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/darkcity"
+        android:alpha="0.9"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/back_btn"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:background="@drawable/backbtn"/>
+        <TextView
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUS SEARCH"
+            android:textColor="#FFFFFF"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FROM"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#ffffff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:weightSum="4"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/source_etxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="source"
+            android:textSize="20sp"
+            android:textColorHint="#ffffff"
+            android:layout_weight="3"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="60dp"
+            android:text="Shiv Nadar University"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/to_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/revPlaces_btn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/looparrows48"
+            android:onClick="startRotatingImage" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <AutoCompleteTextView
+            android:textSize="20sp"
+            android:text="Noida Sector16"
+            android:textColorHint="#ffffff"
+            android:id="@+id/destination_etxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Destiation"
+            android:layout_weight="3"
+            android:textColor="#FFFFFF"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="60dp"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        >
+
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/depDate_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure"
+            android:textColor="#FFFFFF"/>
+        <!--<TextView-->
+            <!--android:id="@+id/deptDate_txt"-->
+            <!--android:layout_below="@+id/depDate_lbl"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="27-08-17"/>-->
+
+        <EditText
+            android:id="@+id/deptDate_etxt"
+            android:textSize="25sp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="5"
+            android:textColor="#ffffff"
+            android:editable="false"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/depDate_lbl"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/ReturnDate_lbl"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return"
+            android:layout_marginRight="30dp"/>
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <EditText
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:id="@+id/returnDate_txt"
+            android:layout_below="@+id/ReturnDate_lbl"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="5"
+            android:layout_marginTop="10dp"
+
+            android:editable="false"/>
+    </RelativeLayout>
+<Button
+    android:id="@+id/submit_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="30dp"
+    android:text="Submit"
+    android:textSize="20sp"
+    android:textColor="#FFFFFF"
+android:backgroundTint="#FF0000"
+    android:backgroundTintMode="src_atop"
+    android:onClick="submitBtn"
+    />
+
+    </LinearLayout>
+
+</RelativeLayout>

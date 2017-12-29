@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.me.kenburnsview.HomeFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/booking_btn"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START BOOKING"
+        android:background="#CCFF0000"
+        android:textColor="#FFFFFF"/>
+
+</FrameLayout>

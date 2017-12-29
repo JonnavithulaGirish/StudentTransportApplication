@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:text="Request Set By:"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/ReqSetby"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:text="Girish Jonnavithula"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:text="Contact Number:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ReqSetPhno"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:text="8130827751"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:weightSum="1">
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:text="Maximum Seats Available :"
+        android:textSize="16sp"
+        android:gravity="center"
+        />
+        <TextView
+            android:id="@+id/maxSeats"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:text="5"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:text="Required Seats"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/SeatsReq"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:text="Mobile Info:"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/mobile_info_ureq"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/dialogCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:background="#cdf4ef"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/dialogButton"
+            android:text="Accept"
+            android:background="#fffc4c"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

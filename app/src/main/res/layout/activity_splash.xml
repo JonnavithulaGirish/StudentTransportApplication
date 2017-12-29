@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <com.me.kenburnsview.KenBurnsView
+        android:id="@+id/ken_burns_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo" />
+
+    <com.me.kenburnsview.RobotoTextView
+        android:id="@+id/welcome_text"
+        style="@style/TextViewAppearance.Headline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagelogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:alpha="0.0"
+        android:text="Transport Committee"
+        android:textColor="@color/global_color_primary_light" />
+
+    <LinearLayout
+
+        android:paddingTop="50dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_below="@id/welcome_text"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/prompt_email"
+        android:hint="ID"
+        android:layout_below="@id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:maxLength="5"
+        android:inputType="text"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/prompt_password"
+        android:paddingTop="10dp"
+        android:layout_below="@id/prompt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+
+
+        <Button
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:id="@+id/login"
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

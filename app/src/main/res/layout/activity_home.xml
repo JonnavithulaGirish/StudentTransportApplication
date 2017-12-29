@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="10">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#2D2D2D"
+        android:weightSum="5">
+        <Button
+            android:padding="5dp"
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textColor="#4949ff"
+            android:background="#2D2D2D"
+            android:drawableTop="@drawable/fhome32"
+            />
+
+        <Button
+            android:padding="5dp"
+            android:id="@+id/trips"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2D2D2D"
+            android:drawableTop="@drawable/fhistory32"
+            android:text="Time Line"
+            android:textColor="#4949ff"/>
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/prof"
+            android:drawableBottom="@drawable/fprof64"
+            android:elevation="20dp"/>
+        <Button
+
+            android:id="@+id/wallet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="6dp"
+           android:drawableTop="@drawable/fwallet32"
+            android:text="Wallet"
+            android:textColor="#4949ff"
+            android:background="#2D2D2D"/>
+
+        <Button
+            android:id="@+id/chat"
+            android:padding="6dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2D2D2D"
+            android:drawableTop="@drawable/fcab32"
+            android:text="Car Pool"
+            android:textColor="#4949ff"/>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.jgirish.classconcepts.Bus.showRequestDet_activity"
+  >
+
+
+
+<TextView
+    android:id="@+id/setUname_addreq"
+    android:layout_width="match_parent"
+    android:textSize="18sp"
+    android:padding="20sp"
+    android:textStyle="bold"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="Hello Girish Jonnavithula,"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:text="Request Details"
+        android:padding="20sp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.75"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0sp"
+           android:layout_weight=".75"
+            android:text="FROM:"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/from_addReq"
+            android:layout_width="0sp"
+            android:layout_weight="1.25"
+            android:text="xxxxx"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight=".75"
+            android:text="TO:"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/to_addReq"
+            android:layout_width="0sp"
+            android:layout_weight="1.25"
+            android:text="xxxx"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.75"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight=".75"
+            android:text="DATE:"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/date_addReq"
+            android:layout_width="0sp"
+            android:layout_weight="1.25"
+            android:text="  /  /  "
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight=".75"
+            android:text="Seats Filled:"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/seatsFilled_addReq"
+            android:layout_width="0sp"
+            android:layout_weight="1.25"
+            android:text="-----"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="Passenger Details"
+        android:padding="20sp"/>
+    <ListView
+        android:id="@+id/PassDet_addreq"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="5.5"/>
+
+    </LinearLayout>
+
